@@ -3,14 +3,16 @@
 // Session time (Approx)
 	// 06.12.24: 6 hours
 	// 09.12.24: 1h30 hours
+	// 19.12.24: 1h30 hours
 //----------------------------------------------------------------------------------
 // This program is a re-creation of the Gacha game Dragon Ball Z Dokkan Battle
-// It will simulate a gacha system with probabilities to get certain results
+// It will simulate a gacha system with probabilities to get certain units
+// Gambling System
 //----------------------------------------------------------------------------------
 // Develelopment version!!!!
 // ---------------------------------------------------------------------------------
 // LIST OF CORRECTION TO BE DONE!!!!!
-	// finish pity system
+	// 
 	//
 	//
 

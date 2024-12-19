@@ -135,6 +135,7 @@
     <ClCompile Include="List - SSR.cpp" />
     <ClCompile Include="Pity - TEQ BUHAN.cpp" />
     <ClCompile Include="TEQ BUHAN.cpp" />
+    <ClCompile Include="Get MAIN TEQ Buhan.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

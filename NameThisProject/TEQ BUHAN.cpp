@@ -14,8 +14,9 @@ std::string gettingR();			// Get a R
 std::string gettingSSR();		// Get a SSR
 
 std::string gettingPITY();		// Getting a feature unit
+std::string gettingMAIN();		// Getting the main unit
 
-void PerformDfSummon(int t_t_dokkanfest, int t_pity)
+void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
 {
 	if (t_t_dokkanfest == 1)
 	{
@@ -51,19 +52,26 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity)
 			}
 
 			// Character number 10 is always a SSR
-			if (step == 10)
+			if (t_mainUnit != 1000)
 			{
-				if (t_pity == 150)
+				if (step == 10)
 				{
-					character = gettingPITY();  // Call a SRR unit
+					if (t_pity == 150)
+					{
+						character = gettingPITY();  // Call a SRR unit
+					}
+					else
+					{
+						character = gettingSSR();
+						amount_ssr++;
+					}
 				}
-				else
-				{
-					character = gettingSSR();
-					amount_ssr++;
-				}
-				
 			}
+			else if (step == 10)
+			{
+				character = gettingMAIN();		// Call the main unit
+			}
+			
 
 			// Display the result of the summon
 			std::cout << "Summon result--> " << character << std::endl;
