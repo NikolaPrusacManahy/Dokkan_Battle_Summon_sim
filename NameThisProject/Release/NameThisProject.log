@@ -1,0 +1,14 @@
+﻿  Banner type menu.cpp
+  GachaMainMenu.cpp
+C:\Users\prusa\OneDrive\Documents\COLLEGE\Programs by me\Programs made by Me\Gacha System\NameThisProject\GachaMainMenu.cpp(30,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Confirmation.cpp
+  List - R.cpp
+  List - SR.cpp
+  List - SSR.cpp
+  Pity - TEQ BUHAN.cpp
+  TEQ BUHAN.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 150 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  NameThisProject.vcxproj -> C:\Users\prusa\OneDrive\Documents\COLLEGE\Programs by me\Programs made by Me\Gacha System\Release\NameThisProject.exe

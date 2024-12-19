@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{8a874667-7038-4a38-a361-199bb90682d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units">
+      <UniqueIdentifier>{0fdf89d9-f799-42d1-9fd1-e4e81b543ee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units\R">
+      <UniqueIdentifier>{242cd773-502e-4514-a4c5-1e6b2f622fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units\SR">
+      <UniqueIdentifier>{4b12cb20-e3b8-4262-8891-fe0f99035c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units\SSR">
+      <UniqueIdentifier>{d7397514-9c5b-4c80-b0dd-8ac657924de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units\LR">
+      <UniqueIdentifier>{fbb1044c-083f-413f-8546-59274b46ee28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units\LR %28Carnival%29">
+      <UniqueIdentifier>{26eb7969-7da8-4937-be13-0ad1e5f6441a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners">
+      <UniqueIdentifier>{07cd758d-a806-4095-bc55-76c6536fee49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Dokkan Fest">
+      <UniqueIdentifier>{065da7e4-bfac-4c24-bdd3-79b9c4ff5875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Legendary">
+      <UniqueIdentifier>{d6f97fdd-5893-4f3c-80d5-b1865fc9b343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Carnival">
+      <UniqueIdentifier>{ab5f5be9-42fb-4cf8-a49a-9e69773b69ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Legendary\LR TEQ Gohan">
+      <UniqueIdentifier>{95ba48b6-05fa-490b-a950-0c72440eda4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Legendary\LR Cell MAx">
+      <UniqueIdentifier>{ba4c8354-21eb-448f-8665-760fe23b3d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Legendary\LR AGL Ultimate Gohan">
+      <UniqueIdentifier>{f9ad46d3-ce44-41cc-af00-a0e035017d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Carnival\STR SSJ Gohan">
+      <UniqueIdentifier>{d944f8dc-46f7-4fc9-99be-a1df0a019e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Carnival\TEQ Broly">
+      <UniqueIdentifier>{c1add962-a084-440c-889f-03043bab3fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Banners\Carnival\AGL Jiren">
+      <UniqueIdentifier>{4b09cbd7-49e6-46de-9101-435147412047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Summons">
+      <UniqueIdentifier>{6ee14d05-6ead-4b9b-a940-16ccadac6e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BannerType MENU">
+      <UniqueIdentifier>{fb39189a-b75d-4363-8054-07c5ad77559c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BannerType MENU\Menu">
+      <UniqueIdentifier>{98034925-ea71-4710-8f55-50de5fef077f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pity System">
+      <UniqueIdentifier>{e056342d-e349-45a5-85ae-fa69410177c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GachaMainMenu.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Banner type menu.cpp">
+      <Filter>Source Files\BannerType MENU\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Confirmation.cpp">
+      <Filter>Source Files\Banners\Dokkan Fest</Filter>
+    </ClCompile>
+    <ClCompile Include="TEQ BUHAN.cpp">
+      <Filter>Source Files\Summons</Filter>
+    </ClCompile>
+    <ClCompile Include="List - R.cpp">
+      <Filter>Source Files\Units\R</Filter>
+    </ClCompile>
+    <ClCompile Include="List - SR.cpp">
+      <Filter>Source Files\Units\SR</Filter>
+    </ClCompile>
+    <ClCompile Include="List - SSR.cpp">
+      <Filter>Source Files\Units\SSR</Filter>
+    </ClCompile>
+    <ClCompile Include="Pity - TEQ BUHAN.cpp">
+      <Filter>Source Files\Pity System</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
