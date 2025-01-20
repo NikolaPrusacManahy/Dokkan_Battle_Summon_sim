@@ -57,6 +57,7 @@ int main()
 
 	// Send to the next section
 	sendbannerType(bannerType);		// Call the function
+	
 	// End program
 	system("Pause");
 	return 0;

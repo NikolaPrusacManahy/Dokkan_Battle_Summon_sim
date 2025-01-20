@@ -16,6 +16,12 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit);
 
 void selectunitDF(int t_dokkanfest, int t_ds)
 {
+	const std::string RED = "\033[31m";
+	const std::string GREEN = "\033[32m";
+	const std::string BLUE = "\033[34m";
+	const std::string PURPLE = "\033[35m";			// Colour to assossiate with the units
+	const std::string RESET = "\033[0m";
+
 	// Variables
 	std::string confirm = "";	// Confirmation from the user (Yes/No)
 
@@ -31,9 +37,17 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 			std::cout << "----------------------------------------------" << std::endl
 				<< "Do you want to perform the summon? (Yes/No)" << std::endl
 				<< "Amount of Dragon Stones: " << t_ds << std::endl
-				<< "Guaranted Featured unit in " << pityCount << " summons" << std::endl
-				<< "Get the main unit in " << mainUnit_count << " summons" << std::endl;
+				<< "Guaranted Featured unit in " << pityCount << " summons" << std::endl;
 			std::cin >> confirm;
+
+			if (mainUnit_count <= 3)	// if near to pity
+			{
+				std::cout << GREEN << "Get the main unit in " << mainUnit_count << " summons" << RESET <<std::endl;
+			}
+			else
+			{
+				std::cout << "Get the main unit in " << mainUnit_count << " summons" << std::endl;
+			}
 
 			// Send the user to the summon screen
 			if (confirm == "Yes" || confirm == "yes")
@@ -75,9 +89,16 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 		} while (t_ds != 0);
 
 		// Add a gap and display on the user's screen that there is no currency left to continue
-		std::cout << std::endl <<
-			"You have " << t_ds << " Dragon Stone left" << std::endl;
-		
+		if (t_ds == 0)		// If the amount is very low
+		{
+			std::cout << std::endl << RED <<
+				"You have " << t_ds << " Dragon Stone left" << RESET << std::endl;
+		}
+		else
+		{
+			std::cout << std::endl <<
+				"You have " << t_ds << " Dragon Stone left" << std::endl;
+		}
 		
 	}
 

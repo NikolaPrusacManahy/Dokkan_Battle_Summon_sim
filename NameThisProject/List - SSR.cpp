@@ -23,6 +23,8 @@ std::string gettingSSR()
 								"*SSR* - hit", "*SSR* - Frost", "*SSR* - Cabba", "*SSR* - Mageta", "*SSR* - Buu (Kid)", "*SSR* - Super Buu", "*SSR* - Buu (good)", "*SSR* - Buu (Evil)", 
 								"*SSR* - Ultimate Gohan", "*SSR* - Piccolo", "*SSR* - Cell (perfect form)", "*SSR* - Cell Jr.", "*SSR* - Super Saiyan God Super Saiyan Vegeta", "*SSR* - Frieza (Final form)", "*SSR* - Radits", "*SSR* - Krillin", };
 
+
+	// List of featured units on the TEQ Buhan banner
 	std::string ssr_feature[] = { GREEN + "*DOOKAN FEST* TEQ Super Buu (Gohan Absorbed)" + RESET , RED + "*DOOKAN FEST* STR Master Roshi" + RESET , BLUE + "*DOOKAN FEST* AGL Frieza (1st Form)" + RESET ,
 									RED + "*DOOKAN FEST* STR Android #17 & Hell Fighter #17" + RESET , PURPLE +"*DOOKAN FEST* INT Majin Vegeta" + RESET , GREEN + "*DOOKAN FEST* TEQ Super Saiyan 2 Vegeta" + RESET ,
 									PURPLE + "*DOOKAN FEST* INT Super Saiyan 2 Goku" + RESET , RED + "*DOOKAN FEST* STR Super Buu" + RESET, PURPLE + "*DOOKAN FEST* INT Ultimate Gohan" + RESET };

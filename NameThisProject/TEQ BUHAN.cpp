@@ -8,12 +8,19 @@
 #include<iostream>
 #include<string>
 
+// Global variables
+int amount_main = 0;				// Amount of main unit
+int amount_Featured = 0;			// Amount of featured unit
+int amount_ssr = 0;					// Amount of SSR
+int amount_sr = 0;					// Amount of SR
+int amount_r = 0;					// Amount of R
+
 // Function list
 std::string gettingSR();		// Get a SR
 std::string gettingR();			// Get a R
 std::string gettingSSR();		// Get a SSR
 
-std::string gettingPITY();		// Getting a feature unit
+std::string gettingPITY();		// Getting a featured unit
 std::string gettingMAIN();		// Getting the main unit
 
 void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
@@ -26,9 +33,7 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
 
 		int randomNum = 0;					// Number generated randomly
 
-		int amount_ssr = 0;					// Amount of SSR
-		int amount_sr = 0;					// Amount of SR
-		int amount_r = 0;					// Amount of R
+		
 
 		for (step = 1; step <= 10; step++)
 		{
@@ -58,7 +63,8 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
 				{
 					if (t_pity == 150)
 					{
-						character = gettingPITY();  // Call a SRR unit
+						character = gettingPITY();  // Call a featured unit
+						amount_Featured++;
 					}
 					else
 					{
@@ -70,6 +76,7 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
 			else if (step == 10)
 			{
 				character = gettingMAIN();		// Call the main unit
+				amount_main++;
 			}
 			
 
@@ -79,6 +86,8 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
 		
 		// Add a gap and display the amount of units the user got in a summury version
 		std::cout << std::endl<<
+			"Amount of Main unit: " << amount_main << std::endl<<
+			"Amount of Fetured Unit: " << amount_Featured << std::endl <<
 			"Amount of SSR: " << amount_ssr << std::endl <<
 			"Amount of SR: " << amount_sr << std::endl <<
 			"Amount of R: " << amount_r << std::endl;
