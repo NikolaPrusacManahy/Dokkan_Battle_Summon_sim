@@ -30,21 +30,21 @@ void sendbannerType(int t_bannerType)
 			std::cout << "-----------------DOOKAN FEST-----------------" << std::endl <<
 				"Please select one of the availible banner below." << std::endl <<
 				"1. TEQ Super Buu (Gohan Absorbed)" << std::endl <<
-				"2. STR Lord Slug" << std::endl <<
-				"3. AGL Vegeta (Scouter)" << std::endl;;
+				"2. (comming soon)" << std::endl <<
+				"3. (comming soon)" << std::endl;;
 			std::cin >> dokkanfest;
 
 			// Error check if the user has enteres a wrong number
-			if (dokkanfest <= 0 || dokkanfest > 3)
+			if (dokkanfest != 1)
 			{
 				std::cout << "--------------------------------------------------"
 					<< std::endl <<
-					"ERROR! You have entered a number that is not on the list." << std::endl <<
+					"ERROR! You have entered a number that is not on the list or the feature is currently not availible yet." << std::endl <<
 					"Please enter a correct number." << std::endl <<
 					"--------------------------------------------------" <<
 					std::endl;
 			}
-		} while (dokkanfest <= 0 || dokkanfest > 3);
+		} while (dokkanfest != 1);
 
 		do
 		{

@@ -10,8 +10,9 @@
 #include<iostream>
 #include<string>
 
+
 // Function list
-void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit);
+void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string confirm);
 
 
 void selectunitDF(int t_dokkanfest, int t_ds)
@@ -28,7 +29,7 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 	int pity = 0;				// build pity if the user spent 150 dragon stones (repeatable)
 	int pityCount = 3;			// Show the amount of summon required to get the pity unit
 	int mainUnit = 0;			// The user will get the main unit when the amount of summons is 20
-	int mainUnit_count = 20;	// Countdown before getting the main unit
+	int redCoins = 0;			// Countdown before getting the main unit
 	
 	if (t_dokkanfest == 1)		// Confirmation from the user
 	{
@@ -38,15 +39,32 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 				<< "Do you want to perform the summon? (Yes/No)" << std::endl
 				<< "Amount of Dragon Stones: " << t_ds << std::endl
 				<< "Guaranted Featured unit in " << pityCount << " summons" << std::endl;
-			std::cin >> confirm;
+			
 
-			if (mainUnit_count <= 3)	// if near to pity
+			if (redCoins <= 190)
 			{
-				std::cout << GREEN << "Get the main unit in " << mainUnit_count << " summons" << RESET <<std::endl;
+				std::cout << "Red coins amount: " << redCoins << std::endl;
+				std::cin >> confirm;
 			}
-			else
+			else if (redCoins >= 200)	// if near to pity
 			{
-				std::cout << "Get the main unit in " << mainUnit_count << " summons" << std::endl;
+				std::cout << GREEN << "Red coins amount: " << redCoins << RESET << std::endl;
+				std::cin >> confirm;
+			}
+			
+
+			// Give the user another option to purchase the main unit
+			if (redCoins >= 200)
+			{
+				std::cout << RED << "If you want to buy the main unit, Please enter 'Main' or " << BLUE <<"continue your summons(yes / no)" << RESET << std::endl;
+				std::cin >> confirm;
+
+				if (confirm == "main" || confirm == "Main")
+				{
+					redCoins -= 200;
+					PerformDfSummon(t_dokkanfest, pity, mainUnit, confirm);
+				}
+					
 			}
 
 			// Send the user to the summon screen
@@ -55,9 +73,9 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 				pity += 50;				// Build the pity for the user
 				pityCount -= 1;			// Reduce the number so the DOKKAN FEST is Obtained at 1
 				mainUnit += 50;			// Build main unit pity
-				mainUnit_count -= 1;	// Reduce the number so the Main unit is Obtained at 1
+				redCoins += 10;			// the Main unit is Obtained at 1
 
-				PerformDfSummon(t_dokkanfest, pity, mainUnit);
+				PerformDfSummon(t_dokkanfest, pity, mainUnit, confirm);
 				// use an amount of currency everytime the user summon
 				t_ds -= 50;		// Use dragon stones
 			}
@@ -80,13 +98,9 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 				pityCount = 3;
 			}
 
-			if (mainUnit == 1000)		// Reset main unit pity and countdown
-			{
-				mainUnit_count = 20;
-				mainUnit = 0;
-			}
-
 		} while (t_ds != 0);
+
+		// Clean inventory when maximun reached
 
 		// Add a gap and display on the user's screen that there is no currency left to continue
 		if (t_ds == 0)		// If the amount is very low

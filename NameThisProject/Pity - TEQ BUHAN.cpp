@@ -10,7 +10,7 @@
 
 
 
-std::string gettingPITY()
+std::string gettingPITY(int amount_main)
 {
 	const std::string RED = "\033[31m";
 	const std::string GREEN = "\033[32m";
@@ -26,6 +26,10 @@ std::string gettingPITY()
 	// Pick the random unit
 	int ssr_unit_featured_generated = rand() % 9;
 
+	if (ssr_feature[ssr_unit_featured_generated] == ssr_feature[0])
+	{
+		amount_main++;
+	}
 	// return the featured unit to the function
 	return ssr_feature[ssr_unit_featured_generated];
 }

@@ -1,17 +1,18 @@
 // Nikola Prusac Manahy
 // C00309098
 // Session time (Approx)
-	// 06.12.24: 6 hours
-	// 09.12.24: 1h30 hours
-	// 19.12.24: 1h30 hours
+	// 06.12.24: 6h
+	// 09.12.24: 1h30 
+	// 19.12.24: 1h30 
+	// 21.01.25: 2h00 
 //----------------------------------------------------------------------------------
 // This program is a re-creation of the Gacha game Dragon Ball Z Dokkan Battle
 // It will simulate a gacha system with probabilities to get certain units
 // Gambling System
 //----------------------------------------------------------------------------------
-// VERSION --> 1.0
+// VERSION --> 1.2
 // ----------------------------------------------------------------------------------
-// Update log -->
+// Update log --> Next is big update to 2.0
 // ---------------------------------------------------------------------------------
 // LIST OF CORRECTION TO BE DONE!!!!!
 	// 

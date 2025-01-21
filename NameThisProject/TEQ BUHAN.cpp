@@ -18,12 +18,12 @@ int amount_r = 0;					// Amount of R
 // Function list
 std::string gettingSR();		// Get a SR
 std::string gettingR();			// Get a R
-std::string gettingSSR();		// Get a SSR
+std::string gettingSSR(int amount_main);		// Get a SSR
 
-std::string gettingPITY();		// Getting a featured unit
+std::string gettingPITY(int amount_main);		// Getting a featured unit
 std::string gettingMAIN();		// Getting the main unit
 
-void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
+void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string confirm)
 {
 	if (t_t_dokkanfest == 1)
 	{
@@ -33,12 +33,22 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
 
 		int randomNum = 0;					// Number generated randomly
 
-		
+		// If the user has bought the main unit by red coins
+		if (confirm == "Main" || confirm == "main")
+		{
+			character = gettingMAIN();		// Call the main unit
+			std::cout << "You have bought the main unit: " << character << std::endl;
+			amount_main++;
+		}
 
 		for (step = 1; step <= 10; step++)
 		{
+			if (confirm == "Main" || confirm == "main")
+			{
+				break;
+			}
 			// Generate a random number to set the user's chance to get a unit (1-100)
-			randomNum = (rand() % 100) + 1;
+			randomNum = (rand() % 101) + 1;
 
 			if (randomNum >= 1 && randomNum <= 59 && step <= 9)		// Getting a SR unit
 			{
@@ -52,28 +62,29 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit)
 			}
 			else if (step <= 9)
 			{
-				character = gettingSSR();// Call a SRR unit
+				character = gettingSSR(amount_main);// Call a SRR unit
 				amount_ssr++;
 			}
 
+			
 			// Character number 10 is always a SSR
-			if (t_mainUnit != 1000)
+			if (t_mainUnit != 1000 && confirm != "Main")
 			{
 				if (step == 10)
 				{
 					if (t_pity == 150)
 					{
-						character = gettingPITY();  // Call a featured unit
+						character = gettingPITY(amount_main);  // Call a featured unit
 						amount_Featured++;
 					}
 					else
 					{
-						character = gettingSSR();
+						character = gettingSSR(amount_main);
 						amount_ssr++;
 					}
 				}
 			}
-			else if (step == 10)
+			else if (step == 10 && confirm != "Main")
 			{
 				character = gettingMAIN();		// Call the main unit
 				amount_main++;

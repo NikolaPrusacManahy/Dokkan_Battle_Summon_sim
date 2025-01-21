@@ -8,7 +8,7 @@
 #include<iostream>
 #include<string>
 
-std::string gettingSSR()
+std::string gettingSSR(int amount_main)
 {
 	const std::string RED = "\033[31m";
 	const std::string GREEN = "\033[32m";
@@ -43,6 +43,10 @@ std::string gettingSSR()
 	}
 	else
 	{
+		if (ssr_feature[ssr_unit_featured_generated] == ssr_feature[0])
+		{
+			amount_main++;
+		}
 		// Return the unit 
 		return ssr_feature[ssr_unit_featured_generated];
 	}
