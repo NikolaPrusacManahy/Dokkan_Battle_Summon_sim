@@ -82,6 +82,9 @@
     <Filter Include="Source Files\Pity System %28Main units%29">
       <UniqueIdentifier>{db5d4c7e-1b0e-4afa-a1f2-1039063b885e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BOX">
+      <UniqueIdentifier>{b83a9374-3e3e-4305-862d-fb5de1db2069}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GachaMainMenu.cpp">
@@ -110,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="Get MAIN TEQ Buhan.cpp">
       <Filter>Source Files\Pity System %28Main units%29</Filter>
+    </ClCompile>
+    <ClCompile Include="UserBox.cpp">
+      <Filter>Source Files\BOX</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,14 +5,15 @@
 	// 09.12.24: 1h30 
 	// 19.12.24: 1h30 
 	// 21.01.25: 2h00 
+	// 22.01.25: 1h00
 //----------------------------------------------------------------------------------
 // This program is a re-creation of the Gacha game Dragon Ball Z Dokkan Battle
 // It will simulate a gacha system with probabilities to get certain units
 // Gambling System
 //----------------------------------------------------------------------------------
-// VERSION --> 1.2
+// VERSION --> 1.3
 // ----------------------------------------------------------------------------------
-// Update log --> Next is big update to 2.0
+// Update log --> Next big update is 2.0
 // ---------------------------------------------------------------------------------
 // LIST OF CORRECTION TO BE DONE!!!!!
 	// 

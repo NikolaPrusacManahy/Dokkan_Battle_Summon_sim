@@ -13,6 +13,7 @@
 
 // Function list
 void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string confirm);
+std::string playerBox();		/// this is the player's inventory
 
 
 void selectunitDF(int t_dokkanfest, int t_ds)
@@ -36,44 +37,48 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 		do
 		{
 			std::cout << "----------------------------------------------" << std::endl
+				<< "If you want to check your own unit inventory enter: (box)" << std::endl
 				<< "Do you want to perform the summon? (Yes/No)" << std::endl
 				<< "Amount of Dragon Stones: " << t_ds << std::endl
 				<< "Guaranted Featured unit in " << pityCount << " summons" << std::endl;
 			
-
-			if (redCoins <= 190)
+			do
 			{
-				std::cout << "Red coins amount: " << redCoins << std::endl;
-				std::cin >> confirm;
-			}
-			else if (redCoins >= 200)	// if near to pity
-			{
-				std::cout << GREEN << "Red coins amount: " << redCoins << RESET << std::endl;
-				std::cin >> confirm;
-			}
-			
-
-			// Give the user another option to purchase the main unit
-			if (redCoins >= 200)
-			{
-				std::cout << RED << "If you want to buy the main unit, Please enter 'Main' or " << BLUE <<"continue your summons(yes / no)" << RESET << std::endl;
-				std::cin >> confirm;
-
-				if (confirm == "main" || confirm == "Main")
+				if (redCoins <= 190)
 				{
-					redCoins -= 200;
-					PerformDfSummon(t_dokkanfest, pity, mainUnit, confirm);
+					std::cout << "Red coins amount: " << redCoins << std::endl;
+					std::cin >> confirm;
 				}
-					
-			}
+				else if (redCoins >= 200)	// if near to pity
+				{
+					std::cout << GREEN << "Red coins amount: " << redCoins << RESET << std::endl;
+					std::cout << RED << "If you want to buy the main unit, Please enter 'Main' or " << BLUE << "continue your summons(yes / no)" << RESET << std::endl;
+					std::cin >> confirm;
+
+					// Give the user another option to purchase the main unit
+					if (confirm == "main" || confirm == "Main")
+					{
+						redCoins -= 200;
+						PerformDfSummon(t_dokkanfest, pity, mainUnit, confirm);
+					}
+
+					if (confirm == "box")
+					{
+
+					}
+
+				}
+			} while ();
+			
+			
 
 			// Send the user to the summon screen
 			if (confirm == "Yes" || confirm == "yes")
 			{
 				pity += 50;				// Build the pity for the user
-				pityCount -= 1;			// Reduce the number so the DOKKAN FEST is Obtained at 1
+				pityCount -= 1;			// Reduce the number so the DOKKAN FEST is Obtained at 0
 				mainUnit += 50;			// Build main unit pity
-				redCoins += 10;			// the Main unit is Obtained at 1
+				redCoins += 10;			// the Main unit is Obtained at 200 if player wants
 
 				PerformDfSummon(t_dokkanfest, pity, mainUnit, confirm);
 				// use an amount of currency everytime the user summon

@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\GachaMainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|solutionrelative:NameThisProject\\GachaMainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\Confirmation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|solutionrelative:NameThisProject\\Confirmation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\TEQ BUHAN.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|solutionrelative:NameThisProject\\TEQ BUHAN.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\Banner type menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6177FF76-2DC9-4F72-BB97-722678427A57}|NameThisProject\\NameThisProject.vcxproj|solutionrelative:NameThisProject\\Banner type menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GachaMainMenu.cpp",
+              "DocumentMoniker": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\GachaMainMenu.cpp",
+              "RelativeDocumentMoniker": "NameThisProject\\GachaMainMenu.cpp",
+              "ToolTip": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\GachaMainMenu.cpp",
+              "RelativeToolTip": "NameThisProject\\GachaMainMenu.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-22T13:25:36.583Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Banner type menu.cpp",
+              "DocumentMoniker": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\Banner type menu.cpp",
+              "RelativeDocumentMoniker": "NameThisProject\\Banner type menu.cpp",
+              "ToolTip": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\Banner type menu.cpp",
+              "RelativeToolTip": "NameThisProject\\Banner type menu.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-22T13:25:43.01Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Confirmation.cpp",
+              "DocumentMoniker": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\Confirmation.cpp",
+              "RelativeDocumentMoniker": "NameThisProject\\Confirmation.cpp",
+              "ToolTip": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\Confirmation.cpp",
+              "RelativeToolTip": "NameThisProject\\Confirmation.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-22T13:25:54.309Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TEQ BUHAN.cpp",
+              "DocumentMoniker": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\TEQ BUHAN.cpp",
+              "RelativeDocumentMoniker": "NameThisProject\\TEQ BUHAN.cpp",
+              "ToolTip": "C:\\Users\\C00309098\\Desktop\\New folder\\Dokkan_Battle_Summon_sim\\NameThisProject\\TEQ BUHAN.cpp",
+              "RelativeToolTip": "NameThisProject\\TEQ BUHAN.cpp",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-22T13:26:08.761Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
