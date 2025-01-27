@@ -7,21 +7,16 @@
 
 #include<iostream>
 #include<string>
+#include "globals.h"
 
-// Global variables
-int amount_main = 0;				// Amount of main unit
-int amount_Featured = 0;			// Amount of featured unit
-int amount_ssr = 0;					// Amount of SSR
-int amount_sr = 0;					// Amount of SR
-int amount_r = 0;					// Amount of R
 
 // Function list
-std::string gettingSR();		// Get a SR
-std::string gettingR();			// Get a R
+std::string gettingSR();						// Get a SR
+std::string gettingR();							// Get a R
 std::string gettingSSR(int amount_main);		// Get a SSR
 
 std::string gettingPITY(int amount_main);		// Getting a featured unit
-std::string gettingMAIN();		// Getting the main unit
+std::string gettingMAIN();						// Getting the main unit
 
 void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string confirm)
 {

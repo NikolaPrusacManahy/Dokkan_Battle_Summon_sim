@@ -9,6 +9,9 @@
 
 #include<iostream>
 #include<string>
+#include "globals.h"		// global variables
+
+
 
 
 // Function list
@@ -37,6 +40,7 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 		do
 		{
 			std::cout << "----------------------------------------------" << std::endl
+				<< "Your box contain " << boxAmount << " units." << std::endl
 				<< "If you want to check your own unit inventory enter: (box)" << std::endl
 				<< "Do you want to perform the summon? (Yes/No)" << std::endl
 				<< "Amount of Dragon Stones: " << t_ds << std::endl
@@ -64,11 +68,11 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 
 					if (confirm == "box")
 					{
-
+						playerBox();
 					}
 
 				}
-			} while ();
+			} while (confirm != "yes" || confirm != "Yes");
 			
 			
 
