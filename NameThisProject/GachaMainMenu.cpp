@@ -22,6 +22,8 @@
 
 
 #include<iostream>
+#include<string>
+
 
 // Functions
 void sendbannerType(int t_bannerType);		// This will take the user's choice and perform the next step

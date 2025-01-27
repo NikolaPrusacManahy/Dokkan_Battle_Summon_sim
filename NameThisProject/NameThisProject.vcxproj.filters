@@ -49,33 +49,6 @@
     <Filter Include="Source Files\Confirmation-summon">
       <UniqueIdentifier>{07cd758d-a806-4095-bc55-76c6536fee49}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Dokkan Fest">
-      <UniqueIdentifier>{065da7e4-bfac-4c24-bdd3-79b9c4ff5875}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Legendary">
-      <UniqueIdentifier>{d6f97fdd-5893-4f3c-80d5-b1865fc9b343}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Legendary\LR TEQ Gohan">
-      <UniqueIdentifier>{95ba48b6-05fa-490b-a950-0c72440eda4a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Legendary\LR Cell MAx">
-      <UniqueIdentifier>{ba4c8354-21eb-448f-8665-760fe23b3d49}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Legendary\LR AGL Ultimate Gohan">
-      <UniqueIdentifier>{f9ad46d3-ce44-41cc-af00-a0e035017d94}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Carnival">
-      <UniqueIdentifier>{ab5f5be9-42fb-4cf8-a49a-9e69773b69ab}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Carnival\STR SSJ Gohan">
-      <UniqueIdentifier>{d944f8dc-46f7-4fc9-99be-a1df0a019e11}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Carnival\TEQ Broly">
-      <UniqueIdentifier>{c1add962-a084-440c-889f-03043bab3fcf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Confirmation-summon\Carnival\AGL Jiren">
-      <UniqueIdentifier>{4b09cbd7-49e6-46de-9101-435147412047}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Pity System\Dokkan Fest">
       <UniqueIdentifier>{b23d0f76-ec3b-48c8-8e7b-6b2a57c84afe}</UniqueIdentifier>
     </Filter>
@@ -92,9 +65,6 @@
     </ClCompile>
     <ClCompile Include="Banner type menu.cpp">
       <Filter>Source Files\BannerType MENU\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="Confirmation.cpp">
-      <Filter>Source Files\Confirmation-summon\Dokkan Fest</Filter>
     </ClCompile>
     <ClCompile Include="TEQ BUHAN.cpp">
       <Filter>Source Files\Summons</Filter>
@@ -116,6 +86,12 @@
     </ClCompile>
     <ClCompile Include="UserBox.cpp">
       <Filter>Source Files\BOX</Filter>
+    </ClCompile>
+    <ClCompile Include="Confirmation.cpp">
+      <Filter>Source Files\Confirmation-summon</Filter>
+    </ClCompile>
+    <ClCompile Include="DeclarationGlobal.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

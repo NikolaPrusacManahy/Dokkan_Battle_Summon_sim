@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Banner type menu.cpp" />
+    <ClCompile Include="DeclarationGlobal.cpp" />
     <ClCompile Include="GachaMainMenu.cpp" />
     <ClCompile Include="Confirmation.cpp" />
     <ClCompile Include="List - R.cpp" />

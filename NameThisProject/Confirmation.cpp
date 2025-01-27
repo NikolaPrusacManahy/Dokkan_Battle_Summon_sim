@@ -41,7 +41,7 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 		{
 			std::cout << "----------------------------------------------" << std::endl
 				<< "Your box contain " << boxAmount << " units." << std::endl
-				<< "If you want to check your own unit inventory enter: (box)" << std::endl
+				<< "If you want to check your own units inventory enter: (box)" << std::endl
 				<< "Do you want to perform the summon? (Yes/No)" << std::endl
 				<< "Amount of Dragon Stones: " << t_ds << std::endl
 				<< "Guaranted Featured unit in " << pityCount << " summons" << std::endl;
@@ -65,14 +65,14 @@ void selectunitDF(int t_dokkanfest, int t_ds)
 						redCoins -= 200;
 						PerformDfSummon(t_dokkanfest, pity, mainUnit, confirm);
 					}
-
+					std::string playerBoxanswer = "";
 					if (confirm == "box")
 					{
-						playerBox();
+						playerBoxanswer = playerBox();
 					}
 
 				}
-			} while (confirm != "yes" || confirm != "Yes");
+			} while (confirm != "no");
 			
 			
 

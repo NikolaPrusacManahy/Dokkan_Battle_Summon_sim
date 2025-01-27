@@ -7,8 +7,9 @@
 
 #include<iostream>
 #include<string>
+#include "globals.h"
 
-std::string gettingSSR(int amount_main)
+std::string gettingSSR()
 {
 	const std::string RED = "\033[31m";
 	const std::string GREEN = "\033[32m";

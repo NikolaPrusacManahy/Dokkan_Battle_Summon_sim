@@ -1,15 +1,15 @@
 #ifndef GOLBALS_H
 #define GOLBALS_H
 // global
-const int MAX_BOX = 50;				// the amount of units the box can store
-extern int boxAmount = 0;			// User's units amount in the box
-int unitsArray[MAX_BOX];				// unit's list array
+extern const int MAX_BOX;				// the amount of units the box can store
+extern int boxAmount;			// User's units amount in the box
+extern int unitsArray[];				// unit's list array
 
-int amount_main = 0;				// Amount of main unit
-int amount_Featured = 0;			// Amount of featured unit
-int amount_ssr = 0;					// Amount of SSR
-int amount_sr = 0;					// Amount of SR
-int amount_r = 0;					// Amount of R
+extern int amount_main;				// Amount of main unit
+extern int amount_Featured;			// Amount of featured unit
+extern int amount_ssr;					// Amount of SSR
+extern int amount_sr;					// Amount of SR
+extern int amount_r;					// Amount of R
 
 
 

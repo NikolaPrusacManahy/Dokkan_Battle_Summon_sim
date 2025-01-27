@@ -13,9 +13,9 @@
 // Function list
 std::string gettingSR();						// Get a SR
 std::string gettingR();							// Get a R
-std::string gettingSSR(int amount_main);		// Get a SSR
+std::string gettingSSR();		// Get a SSR
 
-std::string gettingPITY(int amount_main);		// Getting a featured unit
+std::string gettingPITY();		// Getting a featured unit
 std::string gettingMAIN();						// Getting the main unit
 
 void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string confirm)
@@ -36,7 +36,7 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string
 			amount_main++;
 		}
 
-		for (step = 1; step <= 10; step++)
+		for (step = 0; step <= 9; step++)
 		{
 			if (confirm == "Main" || confirm == "main")
 			{
@@ -45,19 +45,19 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string
 			// Generate a random number to set the user's chance to get a unit (1-100)
 			randomNum = (rand() % 101) + 1;
 
-			if (randomNum >= 1 && randomNum <= 59 && step <= 9)		// Getting a SR unit
+			if (randomNum >= 1 && randomNum <= 59 && step <= 8)		// Getting a SR unit
 			{
 				character = gettingSR();// Call SR unit
 				amount_sr++;
 			}
-			else if (randomNum >= 60 && randomNum <= 89 && step <= 9)		// getting a R unit
+			else if (randomNum >= 60 && randomNum <= 89 && step <= 8)		// getting a R unit
 			{
 				character = gettingR();// Call R unit
 				amount_r++;
 			}
-			else if (step <= 9)
+			else if (step <= 8)
 			{
-				character = gettingSSR(amount_main);// Call a SRR unit
+				character = gettingSSR();// Call a SRR unit
 				amount_ssr++;
 			}
 
@@ -65,27 +65,27 @@ void PerformDfSummon(int t_t_dokkanfest, int t_pity, int t_mainUnit, std::string
 			// Character number 10 is always a SSR
 			if (t_mainUnit != 1000 && confirm != "Main")
 			{
-				if (step == 10)
+				if (step == 9)
 				{
 					if (t_pity == 150)
 					{
-						character = gettingPITY(amount_main);  // Call a featured unit
+						character = gettingPITY();  // Call a featured unit
 						amount_Featured++;
 					}
 					else
 					{
-						character = gettingSSR(amount_main);
+						character = gettingSSR();
 						amount_ssr++;
 					}
 				}
 			}
-			else if (step == 10 && confirm != "Main")
+			else if (step == 9 && confirm != "Main")
 			{
 				character = gettingMAIN();		// Call the main unit
 				amount_main++;
 			}
 			
-
+			unitsArray[step] = stoi(character);//////////////////////////////////////////// fix THIS!
 			// Display the result of the summon
 			std::cout << "Summon result--> " << character << std::endl;
 		}

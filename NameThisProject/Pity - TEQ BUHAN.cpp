@@ -7,11 +7,14 @@
 
 #include<iostream>
 #include<string>
+#include "globals.h"
 
 
 
-std::string gettingPITY(int amount_main)
+
+std::string gettingPITY()
 {
+	
 	const std::string RED = "\033[31m";
 	const std::string GREEN = "\033[32m";
 	const std::string BLUE = "\033[34m";
